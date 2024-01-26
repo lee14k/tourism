@@ -1,17 +1,5 @@
 import Image from "next/image";
-import { Rubik_Doodle_Shadow } from "next/font/google";
 
-// Define the type for Rubik_Doodle_Shadow
-type RubikFont = {
-  weight: string;
-  subsets: string[];
-};
-
-// Create an instance of Rubik_Doodle_Shadow with the type
-const rubik: RubikFont = {
-  weight: '400',
-  subsets: ["latin"]
-};
 
 const Header: React.FC = () => {
   return (
