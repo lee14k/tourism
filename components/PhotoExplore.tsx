@@ -3,8 +3,8 @@ import { Grid, GridItem } from '@chakra-ui/react';
 
 const PhotoExplore = () => {
     return (
-        <div className="grid grid-cols-2">
-            <h1>Two Photos Grid</h1>
+        <div className="grid grid-cols-1">
+           
             <div>
             <div className="grid grid-cols-3">
                 <div>
@@ -16,7 +16,6 @@ const PhotoExplore = () => {
             </div>
             </div>
 
-            <h1>Three Photos Grid</h1>
 
             <div className="grid grid-cols-6">
                 <div className="col-span-3">
