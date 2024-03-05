@@ -12,8 +12,7 @@ const Header: React.FC = () => {
           width={400}
         />
         <div className="my-12">
-          <button className="rounded-md bg-emerald-800 px-3.5 py-2.5 text-2xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >Order Now!</button>
+          
         </div>
       </div>
       <div className="flex flex-col justify-center items-center ">

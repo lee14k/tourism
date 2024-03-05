@@ -13,7 +13,6 @@ const navigation: NavigationItem[] = [
   { name: 'Home', href: '/', current: true },
   { name: 'Plan your Trip', href: '/menu', current: false },
   { name: 'Things To Do', href: '/menu', current: false },
-  { name: 'Blogs', href: '/menu', current: false },
   { name: 'FAQs', href: '/menu', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ]
