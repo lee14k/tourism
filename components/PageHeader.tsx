@@ -1,11 +1,14 @@
 import Head from "next/head";
-import PropTypes from 'prop-types'; // First, ensure you've installed prop-types with npm or yarn
 
-function Header({ headline }: { headline: string }) {
+interface HeaderProps {
+  headline?: string; // The question mark makes the property optional
+}
+
+export default function Header({ headline = "Your Default Headline Here" }: HeaderProps) {
   return (
     <>
       <Head>
-        <title>{headline ? `${headline} - Support Center` : 'Support Center'}</title>
+        <title>{headline} - Support Center</title>
       </Head>
       <div className="bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -20,15 +23,3 @@ function Header({ headline }: { headline: string }) {
     </>
   );
 }
-
-// Define prop types for validation
-Header.propTypes = {
-  headline: PropTypes.string,
-};
-
-// Define default props in case they aren't provided
-Header.defaultProps = {
-  headline: 'Your Default Headline Here',
-};
-
-export default Header;
