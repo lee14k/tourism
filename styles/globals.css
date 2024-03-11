@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.food {
+  background-image: url("/food.jpg");
+  width: 75%;
+  height: 500px;
+  background-size: cover;
+}
