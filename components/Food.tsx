@@ -1,3 +1,6 @@
-const Food: React.FC = () => <div>This is Component A</div>;
-
-export default Food 
+export default function Food ()
+ {
+    return (
+        <div>This is Component A</div>
+    )
+ }

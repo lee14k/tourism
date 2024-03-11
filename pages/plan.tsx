@@ -1,24 +1,20 @@
-import React, { useState } from 'react';
-
-import Food from './components/Food';
-import Lodging from './Lodging';
-
-type ComponentType = 'Food' | 'Lodging' |  null;
-
+import React, { ComponentType, useState } from 'react';
+import Lodging from '@/components/Lodging';
+import Food from '@/components/Food';
 const ParentComponent: React.FC = () => {
-  const [activeComponent, setActiveComponent] = useState<ComponentType>(null);
+const [activeComponent, setActiveComponent] = useState<string>(null);
 
-  const renderComponent = () => {
+const renderComponent = () => {
     switch (activeComponent) {
-      case 'Food':
-        return <Food />;
-      case 'B':
-        return <ComponentB />;
+        case 'Food':
+            return <Food />;
+        case 'B':
+            return <Lodging />;
 
-      default:
-        return <div>Select a component</div>;
+        default:
+            return <div>Select a component</div>;
     }
-  };
+};
 
   return (
     <div>
