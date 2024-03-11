@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar"
 const faqs = [
     {
       id: 1,
@@ -11,6 +12,8 @@ const faqs = [
   export default function FAQ() {
     return (
       <div className="bg-white">
+                <Navbar/>
+
         <div className="mx-auto max-w-7xl divide-y divide-gray-900/10 px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
           <dl className="mt-10 space-y-8 divide-y divide-gray-900/10">

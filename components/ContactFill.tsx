@@ -7,10 +7,8 @@ function classNames(...classes: (string | boolean)[]): string {
   return classes.filter(Boolean).join(' ');
 }
 
-const Example: React.FC = () => {
-  const [agreed, setAgreed] = useState<boolean>(false);
-  const [agreed, setAgreed] = useState(false)
-
+const ContactFill: React.FC = () => {
+const [agreed, setAgreed] = useState<boolean>(false);
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
@@ -176,3 +174,5 @@ const Example: React.FC = () => {
     </div>
   )
 }
+
+export default ContactFill;
