@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { useRouter } from "next/router";
 
 interface NavigationItem {
   name: string;
@@ -10,7 +11,7 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'Plan your Trip', href: '/plan', current: false },
   { name: 'Things To Do', href: '/thingstodo', current: false },
   { name: 'FAQs', href: '/FAQ', current: false },
@@ -22,6 +23,14 @@ function classNames(...classes: (string | boolean)[]) {
 }
 
 export default function Navbar() {
+  const router = useRouter();
+
+  // Update navigation array based on the current route
+  const updatedNavigation = navigation.map((item) => ({
+    ...item,
+    current: item.href === router.asPath,
+  }));
+
   return (
     <Disclosure as="nav" className="">
       {({ open }) => (

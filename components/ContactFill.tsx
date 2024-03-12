@@ -1,7 +1,7 @@
 import { useState, Fragment } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Switch } from '@headlessui/react';
-
+import Navbar from '@/components/Navbar';
 // Typing the function for classNames could be as simple as this:
 function classNames(...classes: (string | boolean)[]): string {
   return classes.filter(Boolean).join(' ');
@@ -10,7 +10,9 @@ function classNames(...classes: (string | boolean)[]): string {
 const ContactFill: React.FC = () => {
 const [agreed, setAgreed] = useState<boolean>(false);
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-white px-6 ">
+                    <Navbar/>
+
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"

@@ -8,3 +8,17 @@
   height: 500px;
   background-size: cover;
 }
+
+.lodging {
+    background-image: url("/hotel.jpg");
+    width: 75%;
+    height: 500px;
+    background-size: cover;
+}
+
+.transportation {
+    background-image: url("/hotel.jpg");
+    width: 75%;
+    height: 500px;
+    background-size: cover;
+}
