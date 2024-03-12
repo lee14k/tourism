@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  './sliderone.jpg', // replace with your image URLs
-  './slidertwo.jpg', 
-  './ns6.bmp',
-  './ns7.bmp',
-  './slider8.jpeg',
-  './pc4.jpeg',
-  './slider9.jpg',
-  './ns4.bmp',
-  './ns5.bmp',
-  './ns8.bmp',
-  './flag.bmp',
-  './ns10.bmp'
+'/slide1.jpg',
+'/slide2.jpg',
+'/slide3.jpg',
+'/slide4.jpg',
 ];
 
 function slider() {
@@ -58,7 +50,6 @@ function slider() {
           </button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

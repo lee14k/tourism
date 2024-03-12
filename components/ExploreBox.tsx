@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Slider from './Slider';
 const ExploreBox: React.FC = () => {
     return (
         <div className="explore-box">
@@ -10,6 +10,7 @@ const ExploreBox: React.FC = () => {
             <div className="photo-column grid grid-cols-2">
                 <div>    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod quo quis temporibus asperiores eligendi totam architecto labore accusamus saepe cum quam expedita, rerum optio modi ad dolore corrupti. Atque.</p></div>
             </div>
+            <Slider/>
         </div>
     );
 };
