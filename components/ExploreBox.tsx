@@ -1,5 +1,4 @@
 import React from 'react';
-import PhotoExplore from './PhotoExplore';
 
 const ExploreBox: React.FC = () => {
     return (
@@ -10,7 +9,6 @@ const ExploreBox: React.FC = () => {
             </div>
             <div className="photo-column grid grid-cols-2">
                 <div>    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod quo quis temporibus asperiores eligendi totam architecto labore accusamus saepe cum quam expedita, rerum optio modi ad dolore corrupti. Atque.</p></div>
-                <PhotoExplore />
             </div>
         </div>
     );
