@@ -4,7 +4,7 @@ import Food from '@/components/Food';
 import Navbar from '@/components/Navbar';
 import Transportation from '@/components/Transportation';
 const ParentComponent: React.FC = () => {
-const [activeComponent, setActiveComponent] = useState<string>(null);
+const [activeComponent, setActiveComponent] = useState<string>('');
 
 const renderComponent = () => {
     switch (activeComponent) {
