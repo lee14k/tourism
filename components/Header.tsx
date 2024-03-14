@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <div className="my-12">
         <div className="flex flex-col justify-center items-center ">
         <div className="mx-48 my-32">
-          <h2 className="text-4xl">Welcome to Taniti</h2>
+          <h2 className="text-4xl">Plan your trip</h2>
           <div>
             <h3 className="bgClip">At the crossroads of the UP</h3>
           </div>
