@@ -4,7 +4,7 @@ export default function Food ()
         <div className="grid grid-cols-2">
         <div className="food"></div>
         <div>
-            <h1>Food in Taniti</h1>
+            <h1 className="text-2xl">Food in Taniti</h1>
             <div>
                 <ul>
                     <li> Restaurants: Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</li>

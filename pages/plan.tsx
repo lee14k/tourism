@@ -14,7 +14,6 @@ const ParentComponent: React.FC = () => {
         return <Lodging />;
       case "Transportation":
         return <Transportation />;
-
     }
   };
 
@@ -22,21 +21,17 @@ const ParentComponent: React.FC = () => {
     <div>
       <Navbar />
       <div>
-      <div className="homeheader">
-      <div className=" flex flex-col justify-center items-center">
-      
-        <div className="my-12">
-        <div className="flex flex-col justify-center items-center ">
-        <div className="mx-48 my-32">
-          <h2 className="text-4xl">Plan your stay</h2>
-
-          <p className="mr-24">Welcome to Jack's, where family and flavor come together in the heart of Rapid River! Our cozy diner-style restaurant has been serving up delicious meals and warm smiles for generations. From mouthwatering breakfasts to hearty lunches and hand-smoked BBQ and dinners, we take pride in offering dishes made with love.</p>
+        <div className="homeheader">
+          <div className=" flex flex-col justify-center items-center">
+            <div className="my-12">
+              <div className="flex flex-col justify-center items-center ">
+                <div className="mx-48 my-32">
+                  <h2 className="text-8xl text-white">Plan your stay</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-     
-      </div>
-    </div>
       </div>
       <div className="flex  justify-evenly space-evenly py-12">
         <ul className="flex gap-24 text-2xl">

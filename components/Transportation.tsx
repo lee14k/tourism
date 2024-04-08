@@ -3,7 +3,7 @@ export default function Transportation() {
     <div className="grid grid-cols-2">
       <div className="transportation"></div>
       <div>
-        <h1>Transportation</h1>
+        <h1 className="text-2xl">Transportation</h1>
         <div>
           <ul>
             <li>
